@@ -2,38 +2,74 @@ const body = document.querySelector("body");
 
 const produtos = [
     {
-        foto: ".assets\img\actions\baby-yoda.png",
+        foto: "./assets/img/actions/starwarspersonagem.jpg",
         name: "Baby Yoda",
         price: 100.00,
         type: "figure"
     },
     {
-        foto: ".assets\img\actions\dragonballpersonagem.jpg",
+        foto: "./assets/img/actions/dragonballpersonagem.jpg",
         name: "Goku SSJ",
         price: 120.00,
         type: "figure"
     },
     {
-        foto: ".assets\img\actions\animewoman.jpg",
+        foto: "./assets/img/actions/animewoman.jpg",
         name: "Anime Maiden",
         price: 140.00,
         type: "figure"
     },
     {
-        foto: ".assets\img\painting\clock.jpg",
+        foto: "./assets/img/actions/starwarspersonagem.jpg",
+        name: "Teste 1",
+        price: 160.00,
+        type: "figure"
+    },
+    {
+        foto: "./assets/img/actions/dragonballpersonagem.jpg",
+        name: "Teste 2",
+        price: 180.00,
+        type: "figure"
+    },
+    {
+        foto: "./assets/img/actions/animewoman.jpg",
+        name: "Teste 3",
+        price: 200.00,
+        type: "figure"
+    },
+    {
+        foto: "./assets/img/painting/clock.jpg",
         name: "Quadro Clock",
         price: 60.00,
         type: "frame"
     },
     {
-        foto: ".assets\img\painting\gamepad.jpg",
+        foto: "./assets/img/painting/gamepad.jpg",
         name: "Quadro Joystick",
         price: 80.00,
         type: "frame"
     },
     {
-        foto: ".assets\img\painting\personagem.jpg",
+        foto: "./assets/img/painting/personagem.jpg",
         name: "Quadro Cetrespeor",
+        price: 40.00,
+        type: "frame"
+    },
+    {
+        foto: "./assets/img/painting/clock.jpg",
+        name: "Teste 1",
+        price: 60.00,
+        type: "frame"
+    },
+    {
+        foto: "./assets/img/painting/gamepad.jpg",
+        name: "Teste 2",
+        price: 80.00,
+        type: "frame"
+    },
+    {
+        foto: "./assets/img/painting/personagem.jpg",
+        name: "Teste 3",
         price: 40.00,
         type: "frame"
     }  
@@ -65,7 +101,7 @@ for (let i = 0; i < listFigures.length; i++){
     let divCard = document.createElement("div");
     listItemCard.appendChild(divCard);
     let imagem = document.createElement("img");
-    imagem.setAttribute("src",`${listFigures[i].foto}`);
+    imagem.src = listFigures[i].foto;
     divCard.appendChild(imagem);
     let nomeItem = document.createElement("span");
     divCard.appendChild(nomeItem);
@@ -86,7 +122,7 @@ for (let i = 0; i < listFrames.length; i++){
     let divCard = document.createElement("div");
     listItemCard.appendChild(divCard);
     let imagem = document.createElement("img");
-    imagem.setAttribute("src",`${listFrames[i].foto}`);
+    imagem.src = listFrames[i].foto;
     divCard.appendChild(imagem);
     let nomeItem = document.createElement("span");
     divCard.appendChild(nomeItem);

@@ -1,12 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
 }
+
 body {
     background-color:#FFFFFF;
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border-bottom: black solid 2px; 
+    background-color: #FFFFFF;
+    text-align: left;
+    width: 100vw;
+}
+
+.menuTopo{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.imagemTitulo {
+    border: none;
+    height: 50px;
+    width: 50px;
 }
 
 .botoes{
@@ -28,28 +58,10 @@ button {
     font-size: 20px;
 }
 
-
 button:hover {
     background-color: #0A99FE;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
-}
-
-.menuTopo{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-}
-.cabecalho{
-    display: flex;
-    margin-top: 100px;
-    padding: 15px;
-}
-header {
-    border-bottom: black solid 2px; 
-    background-color: #FFFFFF;
-    text-align: left;
-    width: 100vw;
 }
 
 .sessaoTituloQuadros{
@@ -75,7 +87,7 @@ header {
 
 ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 li{
@@ -92,10 +104,12 @@ div {
     align-items: center;
     flex-direction: column;
     align-content: center;
-    border-radius: 6px;
+    border-radius: 12px;
+    background-color: #0a0a0a0c;
 }
 
 img {
+    border-radius: 12px;
     height: 150px;
     width: 207px;
 }
